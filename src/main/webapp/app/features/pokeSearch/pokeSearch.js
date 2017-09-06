@@ -15,8 +15,6 @@
                console.log(term);
                vm.pokemon = result;
                console.log(result);
-
-               document.getElementById("results").a
            })
 
 
