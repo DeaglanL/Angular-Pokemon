@@ -1,8 +1,7 @@
 (function() {
 
-    var pokeBattle =  function(sort)
+    var pokeBattle =  function()
     {
-        var vm = this;
 
     };
     angular.module('pidgeotto').controller('pokeBattle', [pokeBattle]);

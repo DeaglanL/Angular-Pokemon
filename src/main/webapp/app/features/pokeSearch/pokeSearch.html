@@ -1,5 +1,13 @@
 <div ng-controller="pokeSearch as ctrl">
     <body>
     pokeSearch
+    <input type="text" name="sBar" id="sbar" ng-model="sTerm"><br>
+    <a href="#0" ng-click="ctrl.search(sTerm)"><span>Search</span></a></li>
     </body>
+    <br>
+    <br>
+    <br>
+    <div ng-hide="ctrl.searchNotDone" id="results">
+        Search results:
+    </div>
 </div>
