@@ -7,19 +7,25 @@
 
 
          vm.search = function(term) {
-           console.log(term);
            vm.searchNotDone = false;
-             console.log("before*********");
            apiGet.getPokemon(term).then(function (result) {
-               console.log("after*********");
-               console.log(term);
                vm.pokemon = result;
-               console.log(result);
+
+               var rEle = document.getElementById("results");
+               var img = new Image;
+               img.src = vm.pokemon.sprites.front_default;
+               rEle.appendChild(img);
+
+
+
+               var text = document.createTextNode(vm.pokemon.name);
+               rEle.appendChild(text);
+
+
+
+
            })
-
-
         }
-
     };
     angular.module('pidgeotto').controller('pokeSearch', ['apiGet', pokeSearch]);
 }());
