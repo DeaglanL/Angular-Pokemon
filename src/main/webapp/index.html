@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <title>Digimon was better</title>
 </head>
+<header>
+    <nav>
+        <h2>Gotta catch um all</h2>
+        <img src="masterball.png" style="width:100px;height:100px;">
+        <a href="#0" ui-sref="pokeBox"><span>PokeBox</span></a></li>
+        <a href="#0" ui-sref="pokeSearch"><span>PokeSearch</span></a></li>
+        <a href="#0" ui-sref="pokeBattle"><span>pokeBattle</span></a></li>
+    </nav>
+</header>
 <body>
 <div ui-view></div>
 <script src="scripts/angular.min.js"></script>
 <script src="scripts/ui-router.min.js"></script>
 <script src="app/app.js"></script>
 <script src="app/app-state-manager.js"></script>
+<script src="app/features/pokeBattle/pokeBattle.js"></script>
+<script src="app/features/pokeSearch/pokeSearch.js"></script>
+<script src="app/features/pokeBox/pokeBox.js"></script>
 </body>
 </html>
