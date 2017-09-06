@@ -1,0 +1,1 @@
+var pokeApp = angular.module('pidgeotto',['ui.router']);
